@@ -15,20 +15,20 @@
         <a href="homepage.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="img/logo.svg" class="h-14" alt="koneo Logo">
         </a>
-        <div class="flex md:order-2 space-x-3 gap-2 md:space-x-0 rtl:space-x-reverse">
+        <div class="flex lg:order-2 space-x-3 gap-2 lg:space-x-0 rtl:space-x-reverse">
             <div class="flex gap-2">
-               <a href="profile.html"> <img src="img/pp.svg" alt=""></a>
+                <a href="profile.html"><img src="img/pp.svg" alt=""></a>
                 <h1 class=" text-md mt-2 text-koneo font-medium">Bianca Pramita</h1>
             </div>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
               </svg>
           </button>
         </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row  ">
+        <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 lg:p-0 mt-4 font-medium rounded-lg  lg:space-x-8 rtl:space-x-reverse lg:flex-row ">
             <li>
               <a href="#home" class="block py-2  text-[#93C6E7] rounded" aria-current="page">Home</a>
             </li>
@@ -50,9 +50,9 @@
       </nav>
     <section class=" font-ube">
         <div class="container">
-            <div class="grid grid-cols-2 gap-5 justify-between ">
+            <div class="grid lg:grid-cols-2 gap-5 justify-between ">
                 <div class="bg-[#F7F7F7] border border-[#BFBFBF] rounded-lg p-6 mt-0">
-                    <img class="" src="img/profile.png" alt="">
+                    <img class="w-full" src="img/profile.png" alt="">
                     <h1 class="text-2xl mt-2 text-koneo font-semibold">Bianca Pramita</h1>
                     <p class=" text-sm text-[#6A6A6A]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                     <div class="grid grid-cols-2 gap-3 mt-5 ">
@@ -155,9 +155,10 @@
             </div>
         </div>
     </section>
-    <footer class="bg-[#769FDB] mt-20">
+     <!-- footer -->
+     <footer class="bg-[#769FDB] mt-20">
         <div class="container font-ube">
-            <div class="flex justify-between">
+            <div class="xl:flex 2xs:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 2xs:grid-cols-2 gap-5  justify-between">
                 <div> 
                     <img class="mt-10" src="img/logo.svg" alt="">
                     <p class="text-white text-sm mt-5 max-w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
@@ -223,5 +224,11 @@
              </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('[data-collapse-toggle="navbar-sticky"]').addEventListener('click', function() {
+      var nav = document.getElementById('navbar-sticky');
+      nav.classList.toggle('hidden');
+  });
+  </script>
 </body>
 </html>
